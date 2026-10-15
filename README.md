@@ -26,8 +26,11 @@ konsole -p ColorScheme=Deepwick
 
 ## Notes
 
-- Faint and intense backgrounds and foregrounds use the normal colors; bold
-  text is not brightened.
+- Bold text in one of the eight standard ANSI colors (SGR 30–37) is drawn in
+  that color's bright variant, as Konsole always does. Bold text in the default
+  foreground stays Foreground (the intense foreground is not brightened), and
+  256-color and truecolor text is never brightened. Faint colors and the
+  background use the normal colors.
 
 Tested with Konsole 26.08.1.
 
